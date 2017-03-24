@@ -863,7 +863,7 @@ public class Account extends javax.swing.JFrame {
         jTextField20.setText(Long.toString(t));
     }//GEN-LAST:event_jTable1KeyPressed
     
- /*   public void refresh(){
+    public void refresh(){
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
         int no = model.getRowCount();
          if(model.getValueAt(no-1, 1)== null)
@@ -914,7 +914,7 @@ public class Account extends javax.swing.JFrame {
             int rate = Integer.parseInt(model.getValueAt(j, 3).toString());
             Object[] row = {null,null,0,0,0};
             long total = quantity * rate;
-            model.setValueAt(total, j, 4);
+            model.setValueAt(total, j, 4);*/
             long total1 = 0;
             for(int i = 0; i<no;i++){
                 total1 = total1 + Integer.parseInt(model.getValueAt(i, 1).toString());
@@ -923,7 +923,7 @@ public class Account extends javax.swing.JFrame {
             jTextField16.setText(Long.toString(total1));
         }
         
-    }*/
+    }
     private void selection(){
         chooser = new JFileChooser(); 
     //chooser.setCurrentDirectory(new java.io.File("."));
